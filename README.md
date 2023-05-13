@@ -1,5 +1,6 @@
 # keycloak
 ## Ingressでの外部公開手順
+こちらの手順はDockerでminikubeを起動しいている場合はingressコントローラーが起動しないため実施できない。調査は続け、問題解消し次第試す。
 ### Deploy Keycloak
 ```bash
 kubectl apply -f ingress/deployments.yml
