@@ -6,9 +6,9 @@ metadata:
 spec:
   tls:
     - hosts:
-      - keycloak.$(minikube ip).nip.io
+      - keycloak.example.com
   rules:
-  - host: keycloak.$(minikube ip).nip.io
+  - host: keycloak.example.com
     http:
       paths:
       - path: /
