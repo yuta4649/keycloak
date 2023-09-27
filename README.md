@@ -10,6 +10,8 @@ kubectl apply -f ingress/deployments.yml
 # minikube addons list を実行し、ingressがenableになっていることを確認する。enable出ない場合は以下を実行
 minikube addons enable ingress
 kubectl apply -f ingress/ingress.yml
+# 以下コマンドを実行しホストマシンとMinikubeクラスタ内のサービス間のネットワークルーティングを設定
+minikube tunnel
 ```
 
 ## NodePortでの外部公開手順
