@@ -4,9 +4,9 @@ kind: Ingress
 metadata:
   name: keycloak
 spec:
-  tls:
-    - hosts:
-      - keycloak.example.com
+  # tls:
+  #   - hosts:
+  #     - keycloak.example.com
   rules:
   - host: keycloak.example.com
     http:
@@ -17,4 +17,4 @@ spec:
           service:
             name: keycloak
             port:
-              number: 8080
+              name: http
