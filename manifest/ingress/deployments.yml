@@ -74,7 +74,8 @@ spec:
       - keycloak.example.com
       secretName: tls-secret
   rules:
-  - http:
+  - host: keycloak.example.com
+    http:
       paths:
       - path: /
         pathType: Prefix
